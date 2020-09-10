@@ -18,7 +18,7 @@ export class AppComponent {
   ngOnInit() {
     this.dataItemService.getItems().subscribe((data) => {
       var results = [];
-      for (let i = 0; i < 1000; i++) {
+      for (let i = 0; i < 30; i++) {
         var album = this.getRandomItem(data.Albums);
         var user = this.getRandomItem(data.Users);
         var post = this.getRandomItem(data.Posts);
