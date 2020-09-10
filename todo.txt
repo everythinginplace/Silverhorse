@@ -1,9 +1,9 @@
   // TODO \\
-  // rewrite data class to hold whole entity
+  // rewrite data class to hold entire amalgamated entity
   // new data backend service to get real data
-  // existing service performs amalgamation
-  // update 
-  // delete
-  // separate component for data rendering
+  // data item service performs aggregation
+  // update + delete
+  // separate component for rendering item
+  // consider a data store module
   // unit tests
 
