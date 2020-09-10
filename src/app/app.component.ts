@@ -17,16 +17,19 @@ export class AppComponent {
 
   ngOnInit() {
     this.dataItemService.getItems().subscribe((data) => {
-      var results = [];        
-      var album = data.Albums[0]; // todo randomise
-      var user = data.Users[0];
-      var post = data.Posts[0];
-      for (let i = 0; i < 30; i++) {
-          var item = { album, user, post };
-          results.push(item);
+      var results = [];
+      for (let i = 0; i < 1000; i++) {
+        var album = this.getRandomItem(data.Albums);
+        var user = this.getRandomItem(data.Users);
+        var post = this.getRandomItem(data.Posts);
+        results.push({ album, user, post });
       }
       this.items = results;
       this.dataIsLoaded = true;
     });
+  }
+
+  getRandomItem(array: Array<any>): any {
+    return array[Math.floor(Math.random() * array.length)];
   }
 }

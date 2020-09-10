@@ -1,6 +1,6 @@
 // TODO \\
 Data item service performs mapping 
-Randomise item selection, ensuring a new item is taken every time
+When randomising item selection, ensure a new item is taken every time
 Update + delete / databinding
 Separate component for rendering item
 Json placeholder url in config
@@ -8,6 +8,5 @@ Unit tests
 
 // Future considerations \\
 
-Service scoping 
+Data Service scoping 
 Data Store pattern 
-  

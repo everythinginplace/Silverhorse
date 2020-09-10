@@ -8,14 +8,14 @@ export class JsonPlaceholderService {
   constructor(private http: HttpClient) { }
 
   getPosts() {
-    return this.http.get<Post>("https://jsonplaceholder.typicode.com/posts");  
+    return this.http.get<Post[]>("https://jsonplaceholder.typicode.com/posts");  
   }
 
   getAlbums() {
-    return this.http.get<Album>("https://jsonplaceholder.typicode.com/albums");  
+    return this.http.get<Album[]>("https://jsonplaceholder.typicode.com/albums");  
   }
 
   getUsers() {
-    return this.http.get<User>("https://jsonplaceholder.typicode.com/users");  
+    return this.http.get<User[]>("https://jsonplaceholder.typicode.com/users");  
   }
 }
