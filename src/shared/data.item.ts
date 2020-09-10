@@ -1,10 +1,4 @@
 export interface DataItem {
-    post: string;
-    album: string;
-    userName: string;
-}
-
-export interface DataItem2 {
   post: Post;
   album: Album;
   user: User;

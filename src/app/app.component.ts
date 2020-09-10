@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DataItem2 } from '../shared/data.item';
+import { DataItem } from '../shared/data.item';
 import { DataItemService } from '../shared/data.item.service';
 
 @Component({
@@ -11,7 +11,7 @@ import { DataItemService } from '../shared/data.item.service';
 export class AppComponent {
   title = 'sh-front-end';
   dataIsLoaded = false;
-  items: DataItem2[];
+  items: DataItem[];
 
   constructor(private dataItemService: DataItemService) { }
 
