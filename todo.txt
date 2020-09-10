@@ -1,9 +1,13 @@
-  // TODO \\
-  // rewrite data class to hold entire amalgamated entity
-  // new data backend service to get real data
-  // data item service performs aggregation
-  // update + delete
-  // separate component for rendering item
-  // consider a data store module
-  // unit tests
+// TODO \\
+Data item service performs mapping 
+Randomise item selection, ensuring a new item is taken every time
+Update + delete / databinding
+Separate component for rendering item
+Json placeholder url in config
+Unit tests
 
+// Future considerations \\
+
+Service scoping 
+Data Store pattern 
+  

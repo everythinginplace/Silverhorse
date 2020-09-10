@@ -11,9 +11,9 @@
     <div class="items">
       <div *ngFor="let item of items">
         <div class="item">
-          <span>Post: {{item.post}}</span><br>
-          <span>Album: {{item.album}}</span> <br>
-          <span>User name: {{item.userName}}</span><br>
+          <span>Post: {{item.post.title}}</span><br>
+          <span>Album: {{item.album.title}}</span> <br>
+          <span>User name: {{item.user.username}}</span><br>
         </div> 
         <br>
       </div>
